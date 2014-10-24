@@ -12,14 +12,20 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-		Operation root = new PlusOperation(
+
+
+        Operand a = new Operand('a', 3);
+        Operand b = new Operand('b', 7);
+        Operand c = new Operand('c', 12);
+        Operand d = new Operand('d', 2);
+
+        Operation root = new PlusOperation(
 				new MulOperation(
-						new PlusOperation(new Operand('a', 3), new Operand('b', 7)), 
-						new MinusOperation(new Operand('a', 3), new Operand('c', 12))),
+						new PlusOperation(a, b),
+						new MinusOperation(a, c)),
 				new MinusOperation(
-						new MulOperation(new Operand('b', 7), new Operand('d', 2)), 
-						new Operand('a', 3)));
+						new MulOperation(b, d),
+                        a));
 	
 		root.print();
 		
