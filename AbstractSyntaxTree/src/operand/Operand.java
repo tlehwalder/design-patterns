@@ -16,20 +16,34 @@ public class Operand implements Expression {
 		this.name = name;
 		this.value = value;
 	}
-	
-	@Override
-	public void print() {
-		System.out.print(value);
-	}
 
 	@Override
-	public double evaluate() {
-		return value;
+	public String getSymbol() {
+		return String.valueOf(value);
 	}
 
-	@Override
-	public char getSymbol() {
-		return name;
-	}
+    /**
+     *
+     * @return false, because Leaf cannot have childs
+     */
+    @Override
+    public Expression getLeft() {
+        return null;
+    }
+
+    /**
+     *
+     * @return null, because Leaf cannot have childs
+     */
+    @Override
+    public Expression getRight() {
+        return null;
+    }
+
+    @Override
+    public double operation(double a, double b){
+        return value;
+    }
+
 
 }

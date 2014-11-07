@@ -8,26 +8,19 @@ public class MinusOperation extends Operation {
 		super(left, right);
 	}
 
-	public static char SYMBOL = '-';
 
-	
-	@Override
-	public void print() {
-		System.out.print('(');
-		left.print();
-		System.out.print(SYMBOL);
-		right.print();
-		System.out.print(')');
-	}
+    @Override
+    public double operation(double a,double b) {
+        return a - b;
+    }
+
+    public static String SYMBOL = "-";
 
 	@Override
-	public double evaluate() {
-		return left.evaluate() - right.evaluate();
-	}
-
-	@Override
-	public char getSymbol() {
+	public String getSymbol() {
 		return SYMBOL;
 	}
+
+
 
 }

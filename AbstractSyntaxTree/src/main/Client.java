@@ -1,5 +1,8 @@
 package main;
 
+import expression.Expression;
+import iterator.EvaluateIterator;
+import iterator.PrintIterator;
 import operand.Operand;
 import operation.MinusOperation;
 import operation.MulOperation;
@@ -12,7 +15,6 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
 
         Operand a = new Operand('a', 3);
         Operand b = new Operand('b', 7);
@@ -27,9 +29,15 @@ public class Client {
 						new MulOperation(b, d),
                         a));
 	
-		root.print();
-		
-		System.out.println(" = " + root.evaluate());
+
+        PrintIterator pit = new PrintIterator();
+        pit.print(root);
+
+        EvaluateIterator eit = new EvaluateIterator();
+        double result = eit.evaluate(root);
+
+        System.out.print("= " + result);
+
 	}
 
 }

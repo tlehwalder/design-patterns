@@ -25,5 +25,7 @@ public abstract class Operation implements Expression {
 		return right;
 	}
 	
-	
+
+    public abstract double operation(double a, double b);
+
 }

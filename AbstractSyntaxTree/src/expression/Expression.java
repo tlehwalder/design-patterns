@@ -1,7 +1,8 @@
 package expression;
 
 public interface Expression {
-	public void print();
-	public double evaluate();
-	public char getSymbol();
+	public String getSymbol();
+    public Expression getLeft();
+    public Expression getRight();
+    public double operation(double a, double b);
 }
