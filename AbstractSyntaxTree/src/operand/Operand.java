@@ -1,5 +1,6 @@
 package operand;
 import expression.Expression;
+import visitor.Visitor;
 
 /**
  * Leaf
@@ -22,6 +23,10 @@ public class Operand implements Expression {
 		return String.valueOf(value);
 	}
 
+    public double getValue(){
+        return value;
+    }
+
     /**
      *
      * @return false, because Leaf cannot have childs
@@ -41,8 +46,13 @@ public class Operand implements Expression {
     }
 
     @Override
-    public double operation(double a, double b){
-        return value;
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public boolean isLeaf() {
+        return true;
     }
 
 

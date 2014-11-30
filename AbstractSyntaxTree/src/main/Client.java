@@ -1,17 +1,20 @@
 package main;
 
-import expression.Expression;
-import iterator.EvaluateIterator;
-import iterator.PrintIterator;
+import iterator.Iterator;
 import operand.Operand;
 import operation.MinusOperation;
 import operation.MulOperation;
 import operation.Operation;
 import operation.PlusOperation;
+import visitor.EvaluateVisitor;
+import visitor.PrintVisitor;
 
 public class Client {
 
 	/**
+     *
+     * (((3.0+7.0)*(3.0-12.0))+((7.0*2.0)-3.0)) = -79.0
+     *
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -30,13 +33,16 @@ public class Client {
                         a));
 	
 
-        PrintIterator pit = new PrintIterator();
-        pit.print(root);
+        PrintVisitor printVisitor = new PrintVisitor();
 
-        EvaluateIterator eit = new EvaluateIterator();
-        double result = eit.evaluate(root);
+        EvaluateVisitor evaluateVisitor = new EvaluateVisitor();
+        Iterator iterator = new Iterator(evaluateVisitor);
 
-        System.out.print("= " + result);
+        iterator.traversePostOrder(root, evaluateVisitor);
+
+        iterator = new Iterator(printVisitor);
+        iterator.traverseInOrder(root);
+        System.out.print("= " + evaluateVisitor.getResult());
 
 	}
 

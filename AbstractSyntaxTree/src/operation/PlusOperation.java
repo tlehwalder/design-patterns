@@ -1,18 +1,13 @@
 package operation;
 
 import expression.Expression;
+import visitor.Visitor;
 
 public class PlusOperation extends Operation {
 
 	public PlusOperation(Expression left, Expression right) {
 		super(left, right);
 	}
-
-    @Override
-    public double operation(double a,double b) {
-        return a + b;
-    }
-
 
     public static String SYMBOL = "+";
 
@@ -21,5 +16,10 @@ public class PlusOperation extends Operation {
 		return SYMBOL;
 	}
 
+    @Override
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+
+    }
 
 }

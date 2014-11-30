@@ -1,5 +1,6 @@
 package operation;
 import expression.Expression;
+import visitor.Visitor;
 
 /**
  * Composite
@@ -24,8 +25,11 @@ public abstract class Operation implements Expression {
 	public Expression getRight(){
 		return right;
 	}
-	
 
-    public abstract double operation(double a, double b);
+    public abstract void accept(Visitor visitor);
+
+    public boolean isLeaf(){
+        return false;
+    }
 
 }

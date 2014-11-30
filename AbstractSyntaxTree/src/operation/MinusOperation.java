@@ -1,6 +1,7 @@
 package operation;
 
 import expression.Expression;
+import visitor.Visitor;
 
 public class MinusOperation extends Operation {
 
@@ -8,10 +9,10 @@ public class MinusOperation extends Operation {
 		super(left, right);
 	}
 
-
     @Override
-    public double operation(double a,double b) {
-        return a - b;
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+
     }
 
     public static String SYMBOL = "-";
