@@ -34,14 +34,14 @@ public class Client {
 	
 
         PrintVisitor printVisitor = new PrintVisitor();
-
         EvaluateVisitor evaluateVisitor = new EvaluateVisitor();
-        Iterator iterator = new Iterator(evaluateVisitor);
 
-        iterator.traversePostOrder(root, evaluateVisitor);
+        Iterator printIterator = printVisitor.createIterator();
+        Iterator evaluateIterator = evaluateVisitor.createIterator();
 
-        iterator = new Iterator(printVisitor);
-        iterator.traverseInOrder(root);
+        printIterator.traverse(root);
+        evaluateIterator.traverse(root);
+
         System.out.print("= " + evaluateVisitor.getResult());
 
 	}

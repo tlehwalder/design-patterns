@@ -1,5 +1,7 @@
 package visitor;
 
+import iterator.EvaluateIterator;
+import iterator.Iterator;
 import operand.Operand;
 import operation.MinusOperation;
 import operation.MulOperation;
@@ -50,6 +52,11 @@ public class EvaluateVisitor implements Visitor {
     @Override
     public void setVisitedCount(int i) {
         this.visitedCount = i;
+    }
+
+    @Override
+    public Iterator createIterator() {
+        return new EvaluateIterator(this);
     }
 
     public double getResult(){

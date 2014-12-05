@@ -1,5 +1,7 @@
 package visitor;
 
+import iterator.Iterator;
+import iterator.PrintIterator;
 import operand.Operand;
 import operation.MinusOperation;
 import operation.MulOperation;
@@ -72,5 +74,10 @@ public class PrintVisitor implements Visitor{
     @Override
     public void setVisitedCount(int visitedCount) {
         this.visitedCount = visitedCount;
+    }
+
+    @Override
+    public Iterator createIterator() {
+        return new PrintIterator(this);
     }
 }
