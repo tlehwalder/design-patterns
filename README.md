@@ -3,3 +3,4 @@
 * Composite	
 * Iterator
 * Visitor
+* Factory Method

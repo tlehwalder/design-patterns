@@ -1,6 +1,6 @@
 package visitor;
 
-import iterator.EvaluateIterator;
+import iterator.PostOrderIterator;
 import iterator.Iterator;
 import operand.Operand;
 import operation.MinusOperation;
@@ -56,7 +56,7 @@ public class EvaluateVisitor implements Visitor {
 
     @Override
     public Iterator createIterator() {
-        return new EvaluateIterator(this);
+        return new PostOrderIterator(this);
     }
 
     public double getResult(){

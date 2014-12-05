@@ -68,25 +68,16 @@
       <file leaf-file-name="Visitor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="18" column="34" selection-start="458" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrintVisitor.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/visitor/PrintVisitor.java">
+      <file leaf-file-name="PolishPrintVisitor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/visitor/PolishPrintVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="19" selection-start="494" selection-end="494" vertical-scroll-proportion="0.60674155" vertical-offset="0" max-vertical-offset="1230">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrintIterator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iterator/PrintIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="645">
+            <state line="48" column="34" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="855">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,19 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Iterator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iterator/Iterator.java">
+      <file leaf-file-name="InOrderIterator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/iterator/InOrderIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvaluateIterator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/iterator/EvaluateIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="34" column="8" selection-start="795" selection-end="795" vertical-scroll-proportion="0.73887813" vertical-offset="128" max-vertical-offset="645">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +99,7 @@
       <file leaf-file-name="EvaluateVisitor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/visitor/EvaluateVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="40" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1035">
+            <state line="59" column="5" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="515" max-vertical-offset="1035">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,10 +107,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PreOrderIterator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iterator/PreOrderIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostOrderIterator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/iterator/PostOrderIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="14" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintVisitor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/visitor/PrintVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1230">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="40" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="720">
+            <state line="43" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -156,13 +169,17 @@
         <option value="$PROJECT_DIR$/src/operation/MulOperation.java" />
         <option value="$PROJECT_DIR$/src/operation/MinusOperation.java" />
         <option value="$PROJECT_DIR$/src/visitor/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/visitor/PrintVisitor.java" />
         <option value="$PROJECT_DIR$/src/visitor/PrintIterator.java" />
         <option value="$PROJECT_DIR$/src/iterator/Iterator.java" />
+        <option value="$PROJECT_DIR$/src/visitor/EvaluateVisitor.java" />
+        <option value="$PROJECT_DIR$/src/visitor/PrintVisitor.java" />
         <option value="$PROJECT_DIR$/src/iterator/PrintIterator.java" />
         <option value="$PROJECT_DIR$/src/iterator/EvaluateIterator.java" />
+        <option value="$PROJECT_DIR$/src/iterator/PostOrderIterator.java" />
         <option value="$PROJECT_DIR$/src/main/Client.java" />
-        <option value="$PROJECT_DIR$/src/visitor/EvaluateVisitor.java" />
+        <option value="$PROJECT_DIR$/src/iterator/PreOrderIterator.java" />
+        <option value="$PROJECT_DIR$/src/visitor/PolishPrintVisitor.java" />
+        <option value="$PROJECT_DIR$/src/iterator/InOrderIterator.java" />
       </list>
     </option>
   </component>
@@ -584,7 +601,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24725275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33002833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19546743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -941,13 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/iterator/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -955,9 +965,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/iterator/PrintIterator.java">
+    <entry file="file://$PROJECT_DIR$/src/visitor/PrintVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="645">
+        <state line="14" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iterator/PostOrderIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/iterator/PreOrderIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="495">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="458" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/EvaluateVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="5" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="515" max-vertical-offset="1035">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/visitor/PolishPrintVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="34" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="855">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -966,33 +1017,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="40" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="720">
+        <state line="43" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/iterator/EvaluateIterator.java">
+    <entry file="file://$PROJECT_DIR$/src/iterator/InOrderIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="34" column="8" selection-start="795" selection-end="795" vertical-scroll-proportion="0.73887813" vertical-offset="128" max-vertical-offset="645">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/EvaluateVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="40" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1035">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/visitor/PrintVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="494" selection-end="494" vertical-scroll-proportion="0.60674155" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
         </state>
       </provider>
     </entry>

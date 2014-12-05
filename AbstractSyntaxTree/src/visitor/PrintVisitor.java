@@ -1,7 +1,7 @@
 package visitor;
 
+import iterator.InOrderIterator;
 import iterator.Iterator;
-import iterator.PrintIterator;
 import operand.Operand;
 import operation.MinusOperation;
 import operation.MulOperation;
@@ -12,7 +12,7 @@ import operation.PlusOperation;
  */
 public class PrintVisitor implements Visitor{
 
-    private int visitedCount;
+    protected int visitedCount;
 
     public PrintVisitor(){
         this.visitedCount = 0;
@@ -78,6 +78,6 @@ public class PrintVisitor implements Visitor{
 
     @Override
     public Iterator createIterator() {
-        return new PrintIterator(this);
+        return new InOrderIterator(this);
     }
 }

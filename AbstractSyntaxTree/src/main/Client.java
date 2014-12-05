@@ -7,6 +7,7 @@ import operation.MulOperation;
 import operation.Operation;
 import operation.PlusOperation;
 import visitor.EvaluateVisitor;
+import visitor.PolishPrintVisitor;
 import visitor.PrintVisitor;
 
 public class Client {
@@ -35,15 +36,19 @@ public class Client {
 
         PrintVisitor printVisitor = new PrintVisitor();
         EvaluateVisitor evaluateVisitor = new EvaluateVisitor();
+        PolishPrintVisitor polishPrintVisitor = new PolishPrintVisitor();
 
         Iterator printIterator = printVisitor.createIterator();
         Iterator evaluateIterator = evaluateVisitor.createIterator();
+        Iterator polishIterator = polishPrintVisitor.createIterator();
 
         printIterator.traverse(root);
         evaluateIterator.traverse(root);
 
         System.out.print("= " + evaluateVisitor.getResult());
 
+        System.out.print("\nPolish Notation:\n");
+        polishIterator.traverse(root);
 	}
 
 }
