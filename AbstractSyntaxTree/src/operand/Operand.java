@@ -29,7 +29,7 @@ public class Operand implements Expression {
 
     /**
      *
-     * @return false, because Leaf cannot have childs
+     * @return null, because Leaf cannot have childs
      */
     @Override
     public Expression getLeft() {

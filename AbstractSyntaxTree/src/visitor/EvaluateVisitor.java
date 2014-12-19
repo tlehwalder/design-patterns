@@ -1,11 +1,12 @@
 package visitor;
 
+import expression.Expression;
+import iterator.ConditionalIterator;
 import iterator.PostOrderIterator;
 import iterator.Iterator;
+import operand.Constant;
 import operand.Operand;
-import operation.MinusOperation;
-import operation.MulOperation;
-import operation.PlusOperation;
+import operation.*;
 
 import java.util.Stack;
 
@@ -15,6 +16,7 @@ import java.util.Stack;
 public class EvaluateVisitor implements Visitor {
 
     private Stack<Double> operandStack;
+    private boolean state = false;
     private int visitedCount;
 
     public EvaluateVisitor() {
@@ -45,8 +47,30 @@ public class EvaluateVisitor implements Visitor {
     }
 
     @Override
+    public void visit(IfOperation e) {}
+
+    @Override
+    public void visit(LessOperation e) {
+        Double left = operandStack.pop();
+        Double right = operandStack.pop();
+
+        state = left < right;
+    }
+
+    @Override
+    public void visit(AssignOperation e) {
+        Constant constant = (Constant) e.getLeft();
+        constant.setValue(this.getResult());
+    }
+
+    @Override
     public void visit(Operand operand) {
         operandStack.push(operand.getValue());
+    }
+
+    @Override
+    public void visit(Constant e) {
+        operandStack.push(e.getValue());
     }
 
     @Override
@@ -56,11 +80,15 @@ public class EvaluateVisitor implements Visitor {
 
     @Override
     public Iterator createIterator() {
-        return new PostOrderIterator(this);
+        return new ConditionalIterator(this);
     }
 
     public double getResult(){
         return operandStack.pop();
+    }
+
+    public boolean getState() {
+        return state;
     }
 
 }

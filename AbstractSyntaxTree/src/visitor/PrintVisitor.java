@@ -2,10 +2,9 @@ package visitor;
 
 import iterator.InOrderIterator;
 import iterator.Iterator;
+import operand.Constant;
 import operand.Operand;
-import operation.MinusOperation;
-import operation.MulOperation;
-import operation.PlusOperation;
+import operation.*;
 
 /**
  * Created by tobiaslehwalder on 11/30/14.
@@ -67,8 +66,28 @@ public class PrintVisitor implements Visitor{
     }
 
     @Override
+    public void visit(IfOperation e) {
+        // TODO: implement me
+    }
+
+    @Override
+    public void visit(LessOperation e) {
+        // TODO: implement me
+    }
+
+    @Override
+    public void visit(AssignOperation e) {
+        // TODO: implement me
+    }
+
+    @Override
     public void visit(Operand e) {
         System.out.print(e.getValue());
+    }
+
+    @Override
+    public void visit(Constant e) {
+        // TODO: implement me
     }
 
     @Override
@@ -79,5 +98,10 @@ public class PrintVisitor implements Visitor{
     @Override
     public Iterator createIterator() {
         return new InOrderIterator(this);
+    }
+
+    @Override
+    public boolean getState() {
+        return false;
     }
 }

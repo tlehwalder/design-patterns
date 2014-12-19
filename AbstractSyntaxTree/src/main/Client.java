@@ -1,11 +1,9 @@
 package main;
 
 import iterator.Iterator;
+import operand.Constant;
 import operand.Operand;
-import operation.MinusOperation;
-import operation.MulOperation;
-import operation.Operation;
-import operation.PlusOperation;
+import operation.*;
 import visitor.EvaluateVisitor;
 import visitor.PolishPrintVisitor;
 import visitor.PrintVisitor;
@@ -25,30 +23,33 @@ public class Client {
         Operand c = new Operand('c', 12);
         Operand d = new Operand('d', 2);
 
-        Operation root = new PlusOperation(
-				new MulOperation(
-						new PlusOperation(a, b),
-						new MinusOperation(a, c)),
-				new MinusOperation(
-						new MulOperation(b, d),
+
+        Operation evalTree = new PlusOperation(
+                new MulOperation(
+                        new PlusOperation(a, b),
+                        new MinusOperation(a, c)),
+                new MinusOperation(
+                        new MulOperation(b, d),
                         a));
-	
 
-        PrintVisitor printVisitor = new PrintVisitor();
+        Constant x = new Constant('x', 6);
+        Operand z = new Operand('z', 0);
+
+        LessOperation less = new LessOperation(x, z);
+        AssignOperation assign = new AssignOperation(x, evalTree);
+
+        Operation root = new IfOperation(less, assign);
+
+        // -------- Initialize Visitors --------
         EvaluateVisitor evaluateVisitor = new EvaluateVisitor();
-        PolishPrintVisitor polishPrintVisitor = new PolishPrintVisitor();
 
-        Iterator printIterator = printVisitor.createIterator();
+        // -------- Initialize Iterators --------
         Iterator evaluateIterator = evaluateVisitor.createIterator();
-        Iterator polishIterator = polishPrintVisitor.createIterator();
 
-        printIterator.traverse(root);
         evaluateIterator.traverse(root);
 
-        System.out.print("= " + evaluateVisitor.getResult());
+        System.out.println(x);
 
-        System.out.print("\nPolish Notation:\n");
-        polishIterator.traverse(root);
 	}
 
 }
